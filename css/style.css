@@ -1,0 +1,163 @@
+*{ padding: 0;
+margin: 0;}
+
+html{
+    scroll-behavior: smooth;
+}
+ul {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/***********************
+font
+**************************/
+
+@font-face {
+    font-family: 'BigNoodleTitling';
+    src: url(../font/'BigNoodleTitling.eot');
+    src: url(../font/'BigNoodleTitling.eot?#iefix') format('embedded-opentype'),
+        url(../font/BigNoodleTitling.woff2') format('woff2'),
+        url(../font/'BigNoodleTitling.woff') format('woff'),
+        url(../font/'BigNoodleTitling.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+header{
+height: 100vh;
+background: url(../img/fond.jpg) center;
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+
+
+header div {
+
+    width: 20vw; 
+    height: 20vw;
+
+    position: relative;
+}
+
+header nav{
+
+    position: fixed;
+    top: 50%;
+    left: 3%;
+    background:rgba(255,255,255,0.7);
+    transform:translateY(-50%)
+
+}
+header nav ul li {
+
+    border-bottom: 2px solid black;
+    padding: 10px 20px;
+}
+
+header nav ul li:last-of-type{
+
+    border-bottom: none;
+}
+
+header nav ul li a{
+
+
+    font-family: 'BigNoodleTitling';
+    text-transform: uppercase;
+    font-size: 3Opx;
+    color: black;
+
+}
+
+header div img {
+    
+    width: 100%;
+    top:0;
+    left: 0;
+    position: absolute;
+}
+
+ 
+main{
+    display: flex;
+    justify-content: flex-end;
+}
+
+main section {
+
+width: 80%;
+display: flex;
+flex-wrap: wrap;
+}
+
+main section>div{
+    margin: 25px;
+}
+main section>div>div{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+main section>div>div>div{
+    width: 250px;
+    height: 250px;
+    background: rgba(0,0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+
+}
+.haut div{
+    transform: translateY(-100%);
+}
+.haut:hover div{
+    transform: translateY(0);
+}
+.bas div{
+    transform: translateY(100%);
+}
+.bas:hover div{
+    transform: translateY(0);
+}
+main section div>div img {
+    width: 100%;
+}
+
+main section div h2 {
+
+    font-size: 70%;
+    font-family: 'BigNoodleTitling'
+}
+
+main section div div p{
+
+    font-family: 'BigNoodleTitling';
+    color: white;
+}
+footer{
+
+height: 300px;
+width: 3OOpx;
+background-color: grey;
+
+}
+
+
+
+
+
+   
+
+
