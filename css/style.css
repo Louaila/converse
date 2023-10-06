@@ -95,6 +95,7 @@ main section {
 width: 80%;
 display: flex;
 flex-wrap: wrap;
+padding: 10px 0;
 }
 
 main section>div{
@@ -121,6 +122,7 @@ main section>div>div>div{
 }
 .haut div{
     transform: translateY(-100%);
+
 }
 .haut:hover div{
     transform: translateY(0);
@@ -148,12 +150,38 @@ main section div div p{
 }
 footer{
 
-height: 300px;
-width: 3OOpx;
+
 background-color: grey;
+display: flex;
+align-items: center;
+flex-direction: column;
+padding: 150px 0;
 
 }
 
+.coordonnés{
+    display: flex;
+margin: 50px;
+   
+}
+.gauche {
+
+    border-right:  2px solid white;
+    padding-right: 25px;
+}
+
+
+.droite{
+
+    display: flex;
+
+    padding-left: 25px;
+    flex-direction: column;
+    justify-content: flex-end;
+  
+    color: white;
+
+}
 
 
 
